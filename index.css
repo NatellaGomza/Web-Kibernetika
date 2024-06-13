@@ -147,3 +147,30 @@ button span {
         line-height: 27.2px;
     }
 }
+
+@media screen and (min-width: 1919px) {
+    .page {
+        max-width: 1920px;
+        padding: 36px 40px;
+    }
+
+    section {
+        padding: 102px 330px 102px 72px;
+    }
+
+    .main-img {
+        background: url("images/image1920.png") no-repeat;
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 48px;
+    }
+
+    button {
+        font-size: 18px;
+        line-height: 29px;
+        margin-top: 46px;
+    }
+}
