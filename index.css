@@ -46,7 +46,7 @@ p {
     color: #727272;
 }
 
-button {
+#modalBtn {
     width: 279px;
     height: 56px;
     padding: 10px 10px 10px 18px;
@@ -56,13 +56,13 @@ button {
     margin-top: 18px;
 }
 
-button div {
+#modalBtn div {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-button span {
+#modalBtn span {
     font-size: 15px;
     font-weight: 500;
     line-height: 24px;
@@ -76,6 +76,119 @@ button span {
     min-height: 220px;
     background-size: cover;
     border-radius: 0px 0px 10px 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 24px;
+    width: 90%;
+    max-width: 500px;
+    background-color: #F0F4FC;
+}
+
+.modal a {
+    text-decoration: none;
+}
+
+.close {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 4px;
+}
+
+::placeholder {
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24.59px;
+    color: #1F4284;
+}
+
+::-ms-input-placeholder {
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24.59px;
+    color: #1F4284;
+}
+
+.colored {
+    background: #D7E2F6;
+    border-radius: 10px;
+    width: 100%;
+    height: 73px;
+    border: none;
+    padding: 24px;
+    margin-top: 4px;
+}
+
+.modal-content form button {
+    background-color: #244C98;
+    color: white;
+    margin-top: 36px;
+}
+
+.modal-content p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32.78px;
+    color: #323232;
+    margin-bottom: 18px;
+}
+
+#checkbox {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #323232;
+    margin-right: 14px;
+}
+
+.checkbox-wrapper {
+    margin: 24px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-wrapper label {
+    font-size: 18px;
+    line-height: 24.59px;
+    color: #323232;
+}
+
+.modal-content a {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27.32px;
+    color: #244C98;
+}
+
+.modal-content button {
+    width: 100%;
+    border-radius: 4px;
+    height: 65px;
+    font-size: 18px;
+    line-height: 29px;
+}
+
+.registerBtn {
+    border: 1px solid #244C98;
+    margin-top: 4px;
+    background-color: transparent;
+    color: #244C98;
 }
 
 @media screen and (min-width: 767px) {
@@ -105,7 +218,7 @@ button span {
         line-height: 24px;
     }
 
-    button {
+    #modalBtn {
         margin-top: 24px;
     }
 }
@@ -141,7 +254,7 @@ button span {
         line-height: 28px;
     }
 
-    button {
+    #modalBtn {
         margin-top: 36px;
         font-size: 17px;
         line-height: 27.2px;
@@ -168,7 +281,7 @@ button span {
         line-height: 48px;
     }
 
-    button {
+    #modalBtn {
         font-size: 18px;
         line-height: 29px;
         margin-top: 46px;

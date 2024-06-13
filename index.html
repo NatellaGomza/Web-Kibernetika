@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Веб-Кибернетика </title>
-    <script src="index.js"></script>
+
     <link rel="stylesheet" href="index.css">
 </head>
 
@@ -17,16 +17,37 @@
             <p>За 18 лет деятельности было реализовано более 500 крупных, а так же, не менее 2500 средних и малых
                 проектов. Используя знания и накопленный опыт мы можем предложить
             </p>
-            <button>
+            <button id="modalBtn">
                 <div>
-                <span>Попробовать бесплатно</span>
-                <img src="images/Frame 1141.svg" alt="">
-            </div>
+                    <span>Попробовать бесплатно</span>
+                    <img src="images/Frame 1141.svg" alt="">
+                </div>
             </button>
+            </label>
         </section>
         <div class="main-img" />
-        <!-- <img class="main-img" src="images/image15.png" alt="" /> -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <div class="close">
+                    <img src="images/closeIcon.svg" />
+                </div>
+                <p>Войти в систему</p>
+                <form>
+                    <input type="text" class="colored" placeholder="Email/Телефон" />
+                    <input type="password" class="colored" placeholder="Пароль" />
+                    <div class="checkbox-wrapper" >
+                        <input type="checkbox" id="checkbox" />
+                        <label for="checkbox">Запомнить пароль</label>
+                    </div>
+                    <a href="#">Восстановить</a>
+                    <button type="submit">Войти</button>
+                </form>
+                <button class="registerBtn">Зарегистрироваться</button>
+            </div>
+        </div>
     </main>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
