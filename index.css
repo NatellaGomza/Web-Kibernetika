@@ -9,20 +9,23 @@
 
 body {
     background-color: gainsboro;
+    display: flex;
+    justify-content: center;
 }
 
 .page {
-    width: 375px;
+    width: 100%;
+    max-width: 375px;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 14px 0px;
+    padding: 14px 24px;
     flex-wrap: wrap;
 }
 
 section {
-    width: 327px;
+    min-width: 327px;
     background-color: #F0F4FC;
     border-radius: 10px 10px 0px 0px;
     padding: 24px 24px 18px;
@@ -33,13 +36,14 @@ h1 {
     font-weight: 500;
     color: #1F4284;
     margin-bottom: 14px;
-    line-height: 27.2px;
+    line-height: 28.02px;
 }
 
 p {
     font-size: 13px;
     font-weight: 400;
     line-height: 20.8px;
+    color: #727272;
 }
 
 button {
@@ -49,6 +53,7 @@ button {
     border-radius: 60px;
     background-color: #244C98;
     border: none;
+    margin-top: 18px;
 }
 
 button div {
@@ -66,4 +71,45 @@ button span {
 
 img {
     border-radius: 0px 0px 10px 10px;
+}
+
+.main-img {
+    min-width: 327px;
+    width: 100%;
+    background: url("images/image375.png") no-repeat;
+    min-height: 220px;
+    background-size: cover;
+}
+
+@media screen and (min-width: 767px) {
+    .page {
+        width: 100%;
+        max-width: 768px;
+        padding: 24px;
+    }
+
+    section {
+        padding: 24px;
+    }
+
+    .main-img {
+        background: url("images/image768.png") no-repeat;
+        background-size: cover;
+        height: 360px;
+    }
+
+    h1 {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 18px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    button {
+        margin-top: 24px;
+    }
 }
