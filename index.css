@@ -69,21 +69,17 @@ button span {
     color: #FFFFFF;
 }
 
-img {
-    border-radius: 0px 0px 10px 10px;
-}
-
 .main-img {
     min-width: 327px;
     width: 100%;
     background: url("images/image375.png") no-repeat;
     min-height: 220px;
     background-size: cover;
+    border-radius: 0px 0px 10px 10px;
 }
 
 @media screen and (min-width: 767px) {
     .page {
-        width: 100%;
         max-width: 768px;
         padding: 24px;
     }
@@ -111,5 +107,43 @@ img {
 
     button {
         margin-top: 24px;
+    }
+}
+
+@media screen and (min-width: 1439px) {
+    .page {
+        flex-wrap: nowrap;
+        max-width: 1440px;
+        padding: 35px 40px 36px;
+    }
+
+    section {
+        border-radius: 10px 0px 0px 10px;
+        padding: 105px 100px 115px 72px;
+        width: 50%;
+    }
+
+    .main-img {
+        background: url("images/image1440.png") no-repeat;
+        background-size: cover;
+        width: 50%;
+        height: 456px;
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    h1 {
+        font-size: 26px;
+        line-height: 42px;
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    button {
+        margin-top: 36px;
+        font-size: 17px;
+        line-height: 27.2px;
     }
 }
